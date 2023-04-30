@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image_scale"/>
+
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de IMC"/>
+
+    <RadioGroup
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_button_homem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homem"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_mulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulher"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/text_idade"
+        android:inputType="number"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Idade"/>
+
+    <EditText
+        android:id="@+id/text_altura"
+        android:inputType="number"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Altura (cm)"/>
+
+    <EditText
+        android:id="@+id/text_peso"
+        android:inputType="number"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"/>
+
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calular IMC"/>
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_margin="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
